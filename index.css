@@ -120,7 +120,7 @@ a:link, a:visited, a:active {
     color: #005449;
     background-color: #B3CCC9;
     /* margin: 0px 0px 20px 40px; */
-    margin: 32px 0px;
+    margin: 32px 0px 48px;
     border: solid 1px #005449;
 }
 
@@ -160,7 +160,7 @@ div.screenshots img {
 }
 
 .homepage {
-    margin: 32px 0px;
+    margin: 32px 0px 48px;
 }
 
 .contact {
