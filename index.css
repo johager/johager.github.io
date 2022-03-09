@@ -99,3 +99,55 @@ a:link, a:visited, a:active {
     color: #005449;
     font-size: 0.83em;
 }
+
+.screenshots {
+    /* float: right; */
+    /* width: 356px; */
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #005449;
+    background-color: #B3CCC9;
+    /* margin: 0px 0px 20px 40px; */
+    margin: 32px 0px;
+    border: solid 1px #005449;
+}
+
+div.screenshots ::-webkit-scrollbar {
+    width: 10px;
+}
+
+div.screenshots ::-webkit-scrollbar-track {
+    background-color: #B3CCC9;
+    -webkit-box-shadow: inset 0 0 6px rgba(7,33,28,0.4);
+}
+
+div.screenshots ::-webkit-scrollbar-thumb {
+    background-color: #80AAA4;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 6px rgba(7,33,28,0.2);
+    border: 2px solid transparent;
+    border-top: 3px solid transparent;
+    background-clip: content-box;
+}
+
+div.screenshots p {
+    margin: 9px 0px 1px 20px;
+}
+
+.screenshots_scroll {
+    height: 653px;
+    overflow: auto;
+    white-space:nowrap;
+    padding: 0px 10px 0px 10px;
+}
+
+div.screenshots img {
+    height: 609px;
+    width: 281px;
+    margin: 10px;
+}
+
+.homepage {
+    margin: 32px 0px;
+}
