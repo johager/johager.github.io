@@ -24,7 +24,7 @@
 
     <h2>ABOUT</h2>
 
-    <p>I have been programming since the 1980s. I taught myself BASIC in middle school and learned Fortran in college. I worked with Fortran and UNIX extensively in graduate school where I earned a Ph.D. in aerospace engineering with a concentration in computational fluid dynamics. I worked at McDonnell Douglas, and then Boeing, in research and development, where my proudest contribution was solving a stability problem with the DARPA Affordable Rapid Response Missile Demonstrator vehicle that later flew successfully as the <a href="https://en.wikipedia.org/wiki/Boeing_X-51_Waverider">Boeing X-51A</a>.</p>
+    <p>I have been programming since the 1980s. I taught myself BASIC in middle school and learned Fortran in college. I worked with Fortran and Unix extensively in graduate school where I earned a Ph.D. in aerospace engineering with a concentration in computational fluid dynamics. I worked at McDonnell Douglas, and then Boeing, in research and development, where my proudest contribution was solving a stability problem with the DARPA Affordable Rapid Response Missile Demonstrator vehicle that later flew successfully as the <a href="https://en.wikipedia.org/wiki/Boeing_X-51_Waverider">Boeing X-51A</a>.</p>
     <p>After leaving the corporate world, I started a nature photography business. I photographed landscapes and wildlife, mainly in the US and Africa, and also led photo safaris to Africa.</p>
     <p>In 2006, I learned PHP, MySQL, HTML, CSS, and JavaScript in order to develop database-driven websites.</p>
     <p>Since 2015, I've been using Swift to develop iOS and macOS apps driven by CoreData.</p>
@@ -32,13 +32,13 @@
 
     <h2>PROJECTS</h2>
 
-    <h3>AWeather (iOS App)</h3>
+    <h3>AWeather<span>&hellip;an iOS App</span></h3>
     <p class="tight_h3"><a href="https://avantiapplications.com/aweather/">website</a></p>
     <p>AWeather, short for Avanti Weather, is a weather app for iDevices (iPhones, iPads, and iPods) that lets you manage weather forecasts from NOAA (the National Oceanic and Atmospheric Administration) and the National Weather Service (NWS) while you're on the go and away from the internet. Weather data can be downloaded for multiple locations when you have a net connection and can be viewed later whether you have a net connection or not. In addition to using the accurate NOAA/NWS forecast data, you can get the forecast for where you want it and not only for major metropolitan locations.</p>
     <p>The app is available on the Apple App Store.</p>
     <p class="appstore"><a href="https://itunes.apple.com/us/app/aweather/id1072955115?ls=1&mt=8" target="AWeatherItunes"><img src="images/Download_on_the_App_Store_Badge_US-UK_135x40_270x80.png" alt="download on the App Store"></a></p>
     <p>It was built using Swift, UIKit, CoreData, CoreLocation, and MapKit. It obtains data from the NWS API (JSON), websites (HTML, XML), and image repositories (JPEG, TIFF).</p>
-    <p>It also connects with a RESTful API built using PHP and MySQL to report errors and get the latest weather-icon composition data.</p>
+    <p>It also connects with a dedicated RESTful API built using PHP and MySQL to report errors associated with the NWS feed and to get the latest weather-icon composition data.</p>
 
     <div class="screenshots">
         <p>Screenshots</p>
@@ -56,13 +56,14 @@
         </div>
     </div>
 
-    <h3>ANotes (iOS & macOS App)</h3>
+    <h3>ANotes<span>&hellip;an iOS & macOS App</span></h3>
 
-    <p>I created this notes app so I could sync data between my devices w/o having an internet connection.</p>
-    <p>It was built using Swift, UIKit, Cocoa, CoreData, and MultipeerConnectivity. The sync function is based on a vector clock and never looses data &mdash; if there's a conflict, both sets of data are combined and formatted to indicate that there was a sync conflict.</p>
+    <p>I created this notes app so I could sync data between my devices w/o having an internet connection. It supports simple formatting, images, and PDF files.</p>
+    <p>It was built using Swift, UIKit, Cocoa, CoreData, and MultipeerConnectivity. It uses a common framework for the basic functionality that's shared between the iOS and macOS apps which have different UI frameworks and requirements.</p>
+    <p>The sync function is based on a vector clock and never looses data &mdash; if there's a sync conflict, both sets of data are combined and formatted to indicate that there was a sync conflict.</p>
     <p>This a personal app that I use every day.</p>
 
-    <h3>ACamera (iOS App)</h3>
+    <h3>ACamera<span>&hellip;an iOS App</span></h3>
 
     <p>I created this camera and photo-viewer app to play with the camera system. It can take still images and videos. The photos viewer always shows the full image in the thumbnail view instead of being cropped like in the Apple Photos app.</p>
     <p>It was built using Swift, UIKit, AVFoundation, CoreMotion, ImageIO, and Photos.</p>
@@ -70,15 +71,15 @@
 
     <p></p>
 
-    <h3>Contacts (Website)</h3>
+    <h3>Contacts<span>&hellip;a website</span></h3>
     <p class="tight_h3"><a href="https://github.com/johager/foundations-capstone-project">git repo</a></p>
 
-    <p>This is a contacts web-app that supports an arbitrary number of phone numbers, email addresses, and physical addresses for each contact. Clicking on the phone data will launch a phone call, clicking on the email data will launch your email app, and clicking on the address data will launch Google maps. Each contact can also have a free-form note area which supports basic HTML for simple formatting. Contacts can be assigned to user-defined groups.</p>
+    <p>I created this contacts web app for my Devmountain Foundations capstone project. Each contact can have an arbitrary number of phone numbers, email addresses, and physical addresses. Clicking on the phone data will launch a phone call, clicking on the email data will launch your email app, and clicking on the address data will launch Google maps. Each contact can also have a free-form note area which supports basic HTML for simple formatting. Contacts can be assigned to user-defined groups. It has a responsive design.</p>
     <p>It was built using JavaScript, NodeJS, Axios, ExpressJS, Sequelize, BcryptJS, and PostgreSQL.</p>
     <p>It was my Devmountain Foundations capstone project.</p>
     
 
-    <h3>James Hager Photography (Website)</h3>
+    <h3>James Hager Photography<span>&hellip;a website</span></h3>
     <p class="tight_h3"><a href="https://jameshagerphoto.com/">website</a></p>
     <p>I created this website to feature my nature-photography work.</p>
     <p>It was built using PHP, HTML, CSS, JavaScript, and MySQL. The blog system was set up so that I could create new blog entries on my laptop while away from the internet, export the necessary data to an XML file, and import that data into the live site when I had a net connection.</p>
@@ -117,11 +118,11 @@
 
     <h4>Version Control</h4>
     <!-- <h4>VERSION CONTROL</h4> -->
-    <p>Git, GitHub, Bitbucket, Source Tree</p>
+    <p>Git, GitHub, Bitbucket, Sourcetree</p>
 
     <h4>Environments</h4>
     <!-- <h4>ENVIRONMENTS</h4> -->
-    <p>Xcode, VSCode, Terminal, phpMyAdmin, Apache, Heroku, Rollbar, Postman, SQL Tabs</p>
+    <p>Xcode, VSCode, Terminal, vi, phpMyAdmin, Apache, Heroku, Rollbar, Postman, SQL Tabs</p>
 
     <!-- <div class="devicon">
         <div class="svg">
