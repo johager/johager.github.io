@@ -11,7 +11,9 @@
 
     <!-- <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Open+Sans:wght@400;600&family=Racing+Sans+One&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet"> -->
 
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Kanit:wght@500&family=Open+Sans:wght@600&family=Racing+Sans+One&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Kanit:wght@500&family=Open+Sans:wght@600&family=Racing+Sans+One&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Kanit:wght@500&family=Open+Sans:wght@600&family=Racing+Sans+One&family=Source+Sans+Pro:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
@@ -33,7 +35,10 @@
     <h3>AWeather (iOS App)</h3>
     <p class="tight_h3"><a href="https://avantiapplications.com/aweather/">website</a></p>
     <p>AWeather, short for Avanti Weather, is a weather app for iDevices (iPhones, iPads, and iPods) that lets you manage weather forecasts from NOAA (the National Oceanic and Atmospheric Administration) and the National Weather Service (NWS) while you're on the go and away from the internet. Weather data can be downloaded for multiple locations when you have a net connection and can be viewed later whether you have a net connection or not. In addition to using the accurate NOAA/NWS forecast data, you can get the forecast for where you want it and not only for major metropolitan locations.</p>
+    <p>The app is available on the Apple App Store.</p>
+    <p class="appstore"><a href="https://itunes.apple.com/us/app/aweather/id1072955115?ls=1&mt=8" target="AWeatherItunes"><img src="images/Download_on_the_App_Store_Badge_US-UK_135x40_270x80.png" alt="download on the App Store"></a></p>
     <p>It was built using Swift, UIKit, CoreData, CoreLocation, and MapKit. It obtains data from the NWS API (JSON), websites (HTML, XML), and image repositories (JPEG, TIFF).</p>
+    <p>It also connects with a RESTful API built using PHP and MySQL to report errors and get the latest weather-icon composition data.</p>
 
     <div class="screenshots">
         <p>Screenshots</p>
@@ -51,8 +56,27 @@
         </div>
     </div>
 
-    <!-- <h3>Contacts (Website)</h3>
-    <p>[Devmountain Foundations capstone project]</p> -->
+    <h3>ANotes (iOS & macOS App)</h3>
+
+    <p>I created this notes app so I could sync data between my devices w/o having an internet connection.</p>
+    <p>It was built using Swift, UIKit, Cocoa, CoreData, and MultipeerConnectivity. The sync function is based on a vector clock and never looses data &mdash; if there's a conflict, both sets of data are combined and formatted to indicate that there was a sync conflict.</p>
+    <p>This a personal app that I use every day.</p>
+
+    <h3>ACamera (iOS App)</h3>
+
+    <p>I created this camera and photo-viewer app as an extension of an pre-interview code challenge. It can take still images and videos. The photos viewer always shows the full image in the thumbnail view instead of being cropped like in the Apple Photos app.</p>
+    <p>It was built using Swift, UIKit, AVFoundation, CoreMotion, ImageIO, and Photos.</p>
+    <p>This a personal app that I stopped using after iPhones had multi-lens cameras.</p>
+
+    <p></p>
+
+    <h3>Contacts (Website)</h3>
+    <p class="tight_h3"><a href="https://github.com/johager/foundations-capstone-project">git repo</a></p>
+
+    <p>This is a contacts web-app that supports an arbitrary number of phone numbers, email addresses, and physical addresses for each contact. Clicking on the phone data will launch a phone call, clicking on the email data will launch your email app, and clicking on the address data will launch Google maps. Each contact can also have a free-form note area which supports basic HTML for simple formatting. Contacts can be assigned to user-defined groups.</p>
+    <p>It was built using JavaScript, NodeJS, Axios, ExpressJS, Sequelize, BcryptJS, and PostgreSQL.</p>
+    <p>It was my Devmountain Foundations capstone project.</p>
+    
 
     <h3>James Hager Photography (Website)</h3>
     <p class="tight_h3"><a href="https://jameshagerphoto.com/">website</a></p>
@@ -65,25 +89,38 @@
     </div>
 
     <h2>SKILLS</h2>
+
     <h4>Languages</h4>
+    <!-- <h4>LANGUAGES</h4> -->
     <p>Swift, JavaScript, PHP, SQL, Objective-C, C#, Python</p>
 
-    <h4>Frameworks</h4>
-    <p>UiKit, AppKit, CoreData, CoreLocation, MapKit</p>
+    <h4>Apple Frameworks</h4>
+    <!-- <h4>APPLE FRAMEWORKS</h4> -->
+    <p>UiKit, Cocoa, CoreData, MessageUI, StoreKit, CoreLocation, MapKit, MultipeerConnectivity, AVFoundation, CoreMotion, ImageIO, Photos</p>
 
-    <h4>Libraries/Platforms</h4>
-    <p>NodeJS, ExpressJS, Sequelize</p>
+    <!-- <h4>Libraries/Platforms</h4> -->
+    <h4>JavaScript Frameworks & Libraries</h4>
+    <!-- <h4>JAVASCRIPT FRAMEWORKS & LIBRARIES</h4> -->
+    <p>NodeJS, Axios, ExpressJS, Sequelize, BcryptJS</p>
 
-    <h4>DB Management</h4>
+    <!-- <h4>DB Management</h4> -->
+    <h4>Databases</h4>
+    <!-- <h4>DATABASES</h4> -->
     <p>MySQL, PostgreSQL</p>
 
+    <h4>Data Formats</h4>
+    <p>JSON, XML</p>
+
     <h4>Operating Systems</h4>
+    <!-- <h4>OPERATING SYSTEMS</h4> -->
     <p>macOS, Unix</p>
 
     <h4>Version Control</h4>
+    <!-- <h4>VERSION CONTROL</h4> -->
     <p>Git, GitHub, Bitbucket, Source Tree</p>
 
     <h4>Environments</h4>
+    <!-- <h4>ENVIRONMENTS</h4> -->
     <p>Xcode, VSCode, Terminal, phpMyAdmin, Apache, Heroku, Rollbar, Postman, SQL Tabs</p>
 
     <!-- <div class="devicon">
