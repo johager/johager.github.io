@@ -186,6 +186,11 @@ a:hover {
 .web_screenshots img {
     height: 464px;
     width: 559px;
+    border: 1px solid #000000;
+}
+
+.between_screenshots {
+    margin-top: -16px;
 }
 
 .video_iframe {
