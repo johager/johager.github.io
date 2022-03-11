@@ -123,7 +123,7 @@ a:hover {
     width: 135px;
 }
 
-.screenshots {
+.screenshots, .video {
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     font-weight: bold;
@@ -133,16 +133,16 @@ a:hover {
     border: solid 1px #005449;
 }
 
-div.screenshots ::-webkit-scrollbar {
+.screenshots ::-webkit-scrollbar {
     width: 10px;
 }
 
-div.screenshots ::-webkit-scrollbar-track {
+.screenshots ::-webkit-scrollbar-track {
     background-color: #B3CCC9;
     -webkit-box-shadow: inset 0 0 6px rgba(7,33,28,0.4);
 }
 
-div.screenshots ::-webkit-scrollbar-thumb {
+.screenshots ::-webkit-scrollbar-thumb {
     background-color: #80AAA4;
     border-radius: 8px;
     -webkit-box-shadow: inset 0 0 6px rgba(7,33,28,0.2);
@@ -151,33 +151,55 @@ div.screenshots ::-webkit-scrollbar-thumb {
     background-clip: content-box;
 }
 
-div.screenshots p {
+.screenshots p,
+.video p {
     margin: 9px 0px 1px 20px;
 }
 
 .screenshots_scroll {
     height: 653px;
     overflow: auto;
-    white-space:nowrap;
+    white-space: nowrap;
     padding: 0px 10px 0px 10px;
 }
 
-div.screenshots img {
+.web_screenshots .screenshots_scroll {
+    height: 506px;
+}
+
+.screenshots img {
+    margin: 10px;
+}
+
+.ios_screenshots img {
     height: 609px;
     width: 281px;
-    margin: 10px;
 }
 
 .mac_screenshots {
     display: inline-block;
-    background-color: #B3CCC9;
-    border: solid 1px #005449;
-    padding: 24px;
+    padding: 0px 16px 12px;
+    margin-top: -16px;
+    margin-bottom: 16px;
 }
 
-.video {
-    position:relative;
-    padding:75% 0 0 0;
+.web_screenshots img {
+    height: 464px;
+    width: 559px;
+}
+
+.video_iframe {
+    position: relative;
+    padding: 69% 0 0 0;
+    margin: 0px 20px 14px;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .homepage {
