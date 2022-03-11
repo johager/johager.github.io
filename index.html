@@ -33,66 +33,90 @@
     <h2>PROJECTS</h2>
 
     <h3>AWeather<span>&hellip;an iOS App</span></h3>
-    <p class="tight_h3"><a href="https://avantiapplications.com/aweather/">website</a></p>
+    <div class="tech">
+        <p><span>Technology (iOS App):</span> Swift, UIKit, CoreData, CoreLocation, MapKit</p>
+        <p><span>Technology (RESTful API):</span> PHP, MySQL</p>
+        <p><span>More Info:</span> <a href="https://avantiapplications.com/aweather/" target="AvantiApps">AvantiApplications.com website</a></p>
+    </div>
     <p>AWeather, short for Avanti Weather, is a weather app for iDevices (iPhones, iPads, and iPods) that lets you manage weather forecasts from NOAA (the National Oceanic and Atmospheric Administration) and the National Weather Service (NWS) while you're on the go and away from the internet. Weather data can be downloaded for multiple locations when you have a net connection and can be viewed later whether you have a net connection or not. In addition to using the accurate NOAA/NWS forecast data, you can get the forecast for where you want it and not only for major metropolitan locations.</p>
-    <p>It was built using Swift, UIKit, CoreData, CoreLocation, and MapKit. It obtains data from the NWS API (JSON), websites (HTML, XML), and image repositories (JPEG, TIFF).</p>
-    <p>It also connects with a dedicated RESTful API built using PHP and MySQL to report errors associated with the NWS feed and to get the latest weather-icon composition data.</p>
+    <p>It obtains data from the NWS API (JSON), websites (HTML, XML), and image repositories (JPEG, TIFF).</p>
+    <p>It also connects with a dedicated RESTful API to report errors associated with the NWS feed and to get the latest weather-icon composition data.</p>
     <p>The app is available through the Apple App Store.</p>
     <p class="appstore"><a href="https://itunes.apple.com/us/app/aweather/id1072955115?ls=1&mt=8" target="AWeatherItunes"><img src="images/Download_on_the_App_Store_Badge_US-UK_135x40_270x80.png" alt="download on the App Store"></a></p>
-
     <div class="screenshots">
         <p>Screenshots</p>
         <div class="screenshots_scroll">
-            <img src="images/aw_ss0_locations_13x.png" alt="locations">
-            <img src="images/aw_ss3a_forecast_13x.png" alt="forcast">
-            <img src="images/aw_ss3b_forecast_13x.png" alt="forcast">
-            <img src="images/aw_ss5a_hourly_13x.png" alt="hourly forcast">
-            <img src="images/aw_ss5b_hourly_13x.png" alt="hourly forcast">
-            <img src="images/aw_ss6_radar_13x.png" alt="radar loop">
-            <img src="images/aw_ss7_satellite_13x.png" alt="satellite loop">
-            <img src="images/aw_ss8_discussion_13x.png" alt="satellite loop">
-            <img src="images/aw_ss4_loc_info_13x.png" alt="location info">
-            <img src="images/aw_ss9_loc_info_map_13x.png" alt="location info">
+            <img src="images/aw_ss0_locations_13x.png" alt="aweather locations">
+            <img src="images/aw_ss3a_forecast_13x.png" alt="aweather forcast">
+            <img src="images/aw_ss3b_forecast_13x.png" alt="aweather forcast">
+            <img src="images/aw_ss5a_hourly_13x.png" alt="aweather hourly forcast">
+            <img src="images/aw_ss5b_hourly_13x.png" alt="aweather hourly forcast">
+            <img src="images/aw_ss6_radar_13x.png" alt="aweather radar loop">
+            <img src="images/aw_ss7_satellite_13x.png" alt="aweather satellite loop">
+            <img src="images/aw_ss8_discussion_13x.png" alt="aweather discussion">
+            <img src="images/aw_ss4_loc_info_13x.png" alt="aweather location info">
+            <img src="images/aw_ss9_loc_info_map_13x.png" alt="aweather location info">
         </div>
     </div>
 
     <h3>ANotes<span>&hellip;an iOS & macOS App</span></h3>
-
+    <div class="tech">
+        <p><span>Technology:</span> Swift, UIKit, Cocoa, CoreData, MultipeerConnectivity</p>
+    </div>
     <p>I created this notes app so I could sync data between my devices w/o having an internet connection. It supports simple formatting, images, and PDF files.</p>
-    <p>It was built using Swift, UIKit, Cocoa, CoreData, and MultipeerConnectivity. It uses a common framework for the basic functionality that's shared between the iOS and macOS apps which have different UI frameworks and requirements.</p>
+    <p>It uses a common framework for the basic functionality that's shared between the iOS and macOS apps which have different UI frameworks and requirements.</p>
     <p>The sync function is based on a vector clock and never looses data &mdash; if there's a sync conflict, both sets of data are combined and formatted to indicate that there was a sync conflict.</p>
     <p>This a personal app that I use every day.</p>
+    <div class="screenshots">
+        <p>Screenshots</p>
+        <div class="screenshots_scroll">
+            <img src="images/an_iphone_home_mask.png" alt="anotes home">
+            <img src="images/an_iphone_folders_mask.png" alt="anotes folders">
+            <img src="images/an_iphone_notes_mask.png" alt="anotes notes">
+            <img src="images/an_iphone_PDF_mask.png" alt="anotes PDF">
+        </div>
+    </div>
+    <div class="mac_screenshots">
+        <img src="images/an_mac_1075x884.png" width="537" height=442" alt="anotes Mac">
+    </div>
 
     <h3>ACamera<span>&hellip;an iOS App</span></h3>
-
+    <div class="tech">
+        <p><span>Technology:</span> Swift, UIKit, AVFoundation, CoreMotion, ImageIO, Photos</p>
+    </div>
     <p>I created this camera and photo-viewer app to play with the camera system. It can take still images and videos. The photos viewer always shows the full image in the thumbnail view instead of being cropped like in the Apple Photos app.</p>
-    <p>It was built using Swift, UIKit, AVFoundation, CoreMotion, ImageIO, and Photos.</p>
     <p>This a personal app that I stopped using after iPhones had multi-lens cameras.</p>
 
     <h3>Contacts<span>&hellip;a website</span></h3>
-    <p class="tight_h3"><a href="https://github.com/johager/foundations-capstone-project">git repo</a></p>
-
+    <div class="tech">
+        <p><span>Technology:</span> JavaScript, NodeJS, Axios, ExpressJS, Sequelize, BcryptJS, PostgreSQL</p>
+        <p><span>More Info:</span> <a href="https://github.com/johager/foundations-capstone-project" target="ContactsGitHub">GitHub repo</a></p>
+    </div>
     <p>I created this contacts web app for my Devmountain Foundations capstone project. Each contact can have an arbitrary number of phone numbers, email addresses, and physical addresses. Clicking on the phone data will launch a phone call, clicking on the email data will launch your email app, and clicking on the address data will launch Google maps. Each contact can also have a free-form note area which supports basic HTML for simple formatting. Contacts can be assigned to user-defined groups. It has a responsive design.</p>
-    <p>It was built using JavaScript, NodeJS, Axios, ExpressJS, Sequelize, BcryptJS, and PostgreSQL.</p>
+    <div class="video"><iframe src="https://player.vimeo.com/video/686962478?h=ae31688ceb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Contacts Web App Demo"></iframe></div>
 
     <h3>Mile High Wildlife Photo Club<span>&hellip;a website</span></h3>
-    <p class="tight_h3"><a href="https://www.mhwpc.org/">website</a></p>
-    <p>It was built using PHP, HTML, CSS, JavaScript, and MySQL. The public area provides information about the club and galleries of winning competition images.</p>
-    <p>There is a secure member area for uploading images for the monthly competitions, and admin control for competitions, meetings, and more.</p>
+    <div class="tech">
+        <p><span>Technology:</span> PHP, HTML, CSS, JavaScript, MySQL</p>
+        <p><span>More Info:</span> <a href="https://www.mhwpc.org/" target="MHWPC">MHWPC.org website</a></p>
+    </div>
+    <p>The public area provides information about the club and galleries of winning competition images.</p>
+    <p>There is a secure area for members to upload images for the monthly competitions, and for admin control of competitions, meetings, and more.</p>
     <p>The website automatically sends meeting and competition email notices to members.</p>
-
     <div class="homepage">
-        <img src="images/MHWPC_top_13-10-07_385x366_fw80.jpg" alt="Mile High Wildlife Photo Club home page">
+        <img src="images/MHWPC_top_13-10-07_385x366_fw80.jpg" width="385" height="366" alt="Mile High Wildlife Photo Club home page">
     </div>
     
     <h3>James Hager Photography<span>&hellip;a website</span></h3>
-    <p class="tight_h3"><a href="https://jameshagerphoto.com/">website</a></p>
+    <div class="tech">
+        <p><span>Technology:</span> PHP, HTML, CSS, JavaScript, MySQL</p>
+        <p><span>More Info:</span> <a href="https://jameshagerphoto.com/" target="JHP">JamesHagerPhoto.com website</a></p>
+    </div>
     <p>I created this website to feature my nature-photography work.</p>
-    <p>It was built using PHP, HTML, CSS, JavaScript, and MySQL. The blog system was set up so that I could create new blog entries on my laptop while away from the internet, export the necessary data to an XML file, and import that data into the live site when I had a net connection.</p>
-    <p>I created the custom slideshow on the home page from scratch using JavaScript.</p>
-
+    <p>The blog system was set up so that I could create new blog entries on my laptop while away from the internet, export the necessary data to an XML file, and import that data into the live site when I had a net connection.</p>
+    <p>I created the custom slideshow on the home page using JavaScript.</p>
     <div class="homepage">
-        <img src="images/JHP_12-02-04_385x406_fw80.jpg" alt="James Hager Photography home page">
+        <img src="images/JHP_12-02-04_385x406_fw80.jpg" width="385" height="406" alt="James Hager Photography home page">
     </div>
 
     <h2>SKILLS</h2>
@@ -142,8 +166,9 @@
     </div> -->
     <h2>CONTACT</h2>
     <div class="contact">
-        <p><a href="https://www.linkedin.com/in/james-onslow-hager/">LinkedIn</a><span>|</span><a href="https://github.com/johager">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/james-onslow-hager/" target="LinkedIn">LinkedIn</a><span>|</span><a href="https://github.com/johager" target="JOHGitHub">GitHub</a></p>
     </div>
 </div>
+<script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>

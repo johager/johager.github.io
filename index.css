@@ -44,15 +44,15 @@ h2 {
 
 h3 {
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-    font-size: 2.2em;
+    font-size: 2.4em;
     font-style: italic;
     font-weight: 600;
     color: #005449;
-    margin: 32px 0.0em 12px;
+    margin: 36px 0.0em 12px;
 }
 
 h3 span {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-left: 24px;
 }
 
@@ -65,7 +65,7 @@ h4 {
   }
 
 p {
-    margin: 0px 0px 8px;
+    margin-bottom: 8px;
 }
 
 a:link, a:visited, a:active {
@@ -85,8 +85,20 @@ a:hover {
     margin-top: -54px;
 }
 
-.tight_h3 {
-    margin-top: -0.6em;
+.tech {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.tech p {
+    margin-bottom: 4px;
+}
+
+.tech span {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #005449;
 }
 
 .devicon {
@@ -106,14 +118,12 @@ a:hover {
     font-size: 0.83em;
 }
 
-p.appstore img {
+.appstore img {
     height: 40px;
     width: 135px;
 }
 
 .screenshots {
-    /* float: right; */
-    /* width: 356px; */
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     font-weight: bold;
@@ -158,8 +168,24 @@ div.screenshots img {
     margin: 10px;
 }
 
+.mac_screenshots {
+    display: inline-block;
+    background-color: #B3CCC9;
+    border: solid 1px #005449;
+    padding: 24px;
+}
+
+.video {
+    position:relative;
+    padding:75% 0 0 0;
+}
+
 .homepage {
-    margin: 32px 0px 48px;
+    display: inline-block;
+    background-color: #B3CCC9;
+    border: solid 1px #005449;
+    padding: 24px;
+    margin-top: 32px;
 }
 
 .contact {
