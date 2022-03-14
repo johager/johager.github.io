@@ -7,21 +7,43 @@
     <title>James Hager's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Open+Sans:wght@400;600&family=Racing+Sans+One&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet"> -->
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Kanit:wght@500&family=Open+Sans:wght@600&family=Racing+Sans+One&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet"> -->
-
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Kanit:wght@500&family=Open+Sans:wght@600&family=Racing+Sans+One&family=Source+Sans+Pro:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
-<div class="center">
-    <h1>James Hager</h1>
-    <p class="tight_h1">iOS & macOS App Developer</p>
 
-    <h2>ABOUT</h2>
+<div class="center">
+    <header>
+        <div>
+            <p class="head_big">James Hager</p>
+            <p class="head_sub">iOS & macOS App Developer</p>
+        </div>
+        <nav>
+            <div class="main_nav">
+                <a href="#about">ABOUT</a>
+                <a class="menuButton" href="#projects" onmouseover="buttonMouseoverShowCenter(event,'projects_subnav');">PROJECTS</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <div class='sub_nav' id='sub_nav'>
+                <div id="projects_subnav" class="menu" onMouseOver="menuMouseover(event)">
+                    <a class="menuItem" href="#aweather">AWeather &hellip; an iOS App</a>
+                    <a class="menuItem" href="#anotes">ANotes &hellip; an iOS & macOS App</a>
+                    <a class="menuItem" href="#acamera">ACamera &hellip; an iOS App</a>
+                    <a class="menuItem" href="#contacts">Contacts &hellip; a website</a>
+                    <a class="menuItem" href="#avantiwebhouse">Avanti Web House &hellip; a website</a>
+                    <a class="menuItem" href="#mhwpc">Mile High Wildlife Photo Club &hellip; a website</a>
+                    <a class="menuItem" href="#rvramblings">RV Ramblings &hellip; a website</a>
+                    <a class="menuItem" href="#jameshagerphoto">James Hager Photography &hellip; a website
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <a name="about"></a>
+    <h1>ABOUT</h1>
 
     <p>I have been programming since the 1980s. I taught myself BASIC in middle school and learned Fortran in college. I worked with Fortran and Unix extensively in graduate school where I earned a Ph.D. in aerospace engineering with a concentration in computational fluid dynamics. I worked at McDonnell Douglas, and then Boeing, in research and development, where my proudest contribution was solving a stability problem with the DARPA Affordable Rapid Response Missile Demonstrator vehicle that later flew successfully as the <a href="https://en.wikipedia.org/wiki/Boeing_X-51_Waverider" target="x51">Boeing X-51A</a>.</p>
     <p>After leaving the corporate world, I started a nature photography business. I photographed landscapes and wildlife, mainly in the US and Africa, and also led photo safaris to Africa.</p>
@@ -29,9 +51,12 @@
     <p>Since 2015, I've been using Swift to develop iOS and macOS apps driven by CoreData.</p>
     <p>I have been living full-time in my RV since 2008, and spend the majority of my time off the grid thanks to the solar-electric system I designed and installed.</p>
 
-    <h2>PROJECTS</h2>
+    <a name="projects"></a>
+    <h1>PROJECTS</h1>
 
-    <h3>AWeather<span>&hellip;an iOS App</span></h3>
+    <a name="aweather"></a>
+    <!-- <h2>AWeather<span>&hellip; an iOS App</span></h2> -->
+    <h2>AWeather<span>&mdash; an iOS App</span></h2>
     <div class="tech">
         <p><span>Technology (iOS App):</span> Swift, UIKit, CoreData, CoreLocation, MapKit, CryptoKit</p>
         <p><span>Technology (RESTful API):</span> PHP, MySQL</p>
@@ -69,13 +94,14 @@
         </div>
     </div>
 
-    <h3>ANotes<span>&hellip;an iOS & macOS App</span></h3>
+    <a name="anotes"></a>
+    <h2>ANotes<span>&hellip; an iOS & macOS App</span></h2>
     <div class="tech">
         <p><span>Technology:</span> Swift, UIKit, Cocoa, CoreData, MultipeerConnectivity</p>
     </div>
     <p>I created this notes app so I could sync data between my devices w/o having an internet connection. It supports simple formatting, images, and PDF files.</p>
     <p>It uses a common framework for the basic functionality that's shared between the iOS and macOS apps which have different UI frameworks and requirements.</p>
-    <p>The sync function is based on a vector clock and never looses data &mdash; if there's a sync conflict, both sets of data are combined and formatted to indicate that there was a sync conflict.</p>
+    <p>The sync function uses a vector clock and never loses data &mdash; if there's a sync conflict, both sets of data are combined and formatted to indicate that there was a sync conflict.</p>
     <p>This a personal app that I use every day.</p>
     <div class="screenshots ios_screenshots">
         <p>iOS App Screenshots</p>
@@ -91,14 +117,16 @@
         <img src="images/an_mac_1075x884.png" width="537" height="442" alt="anotes Mac">
     </div>
 
-    <h3>ACamera<span>&hellip;an iOS App</span></h3>
+    <a name="acamera"></a>
+    <h2>ACamera<span>&hellip; an iOS App</span></h2>
     <div class="tech">
         <p><span>Technology:</span> Swift, UIKit, AVFoundation, CoreMotion, ImageIO, Photos</p>
     </div>
     <p>I created this camera and photo-viewer app to play with the camera system. It can take still images and videos. The photos viewer always shows the full image in the thumbnail view instead of being cropped like in the Apple Photos app.</p>
     <p>This a personal app that I stopped using after iPhones had multi-lens cameras.</p>
 
-    <h3>Contacts<span>&hellip;a website</span></h3>
+    <a name="contacts"></a>
+    <h2>Contacts<span>&hellip; a website</span></h2>
     <div class="tech">
         <p><span>Technology:</span> JavaScript, NodeJS, Axios, ExpressJS, Sequelize, BcryptJS, PostgreSQL</p>
         <p><span>More Info:</span> <a href="https://github.com/johager/foundations-capstone-project" target="ContactsGitHub">GitHub repo</a></p>
@@ -107,11 +135,12 @@
     <div class="video">
         <p>Demo Video</p>
         <div class="video_iframe">
-        <iframe src="https://player.vimeo.com/video/686962478?h=ae31688ceb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Contacts Web App Demo"></iframe>
+        <iframe src="https://player.vimeo.com/video/686962478?h=ae31688ceb" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
-    <h3>Avanti Web House<span>&hellip;a website</span></h3>
+    <a name="avantiwebhouse"></a>
+    <h2>Avanti Web House<span>&hellip; a website</span></h2>
     <div class="tech">
         <p><span>Technology:</span> PHP, HTML, CSS, JavaScript</p>
         <p><span>More Info:</span> <a href="https://avantiwebhouse.com/" target="AvantiWebHouse">AvantiWebHouse.com website</a></p>
@@ -128,7 +157,8 @@
         </div>
     </div>
 
-    <h3>Mile High Wildlife Photo Club<span>&hellip;a website</span></h3>
+    <a name="mhwpc"></a>
+    <h2>Mile High Wildlife Photo Club<span>&hellip; a website</span></h2>
     <div class="tech">
         <p><span>Technology:</span> PHP, HTML, CSS, JavaScript, MySQL</p>
         <p><span>More Info:</span> <a href="https://www.mhwpc.org/" target="MHWPC">MHWPC.org website</a></p>
@@ -156,10 +186,11 @@
         </div>
     </div>
 
-    <h3>RV Ramblings<span>&hellip;a website</span></h3>
+    <a name="rvramblings"></a>
+    <h2>RV Ramblings<span>&hellip; a website</span></h2>
     <div class="tech">
         <p><span>Technology:</span> PHP, HTML, CSS, JavaScript, MySQL</p>
-        <p><span>More Info:</span> <a href="https://rvramblings.com/" target="RVR">RVRamblings.com website</a></p>
+        <p><span>More Info:</span> <a href="https://rvramblings.com/" target="RVRamblings">RVRamblings.com website</a></p>
     </div>
     <p>The blog system was set up so that I could create new blog entries on my laptop while away from the internet, export the necessary data to an XML file, and import that data into the live site when I had a net connection.</p>
     <div class="screenshots web_screenshots">
@@ -177,10 +208,11 @@
         </div>
     </div>
     
-    <h3>James Hager Photography<span>&hellip;a website</span></h3>
+    <a name="jameshagerphoto"></a>
+    <h2>James Hager Photography<span>&hellip; a website</span></h2>
     <div class="tech">
         <p><span>Technology:</span> PHP, HTML, CSS, JavaScript, MySQL</p>
-        <p><span>More Info:</span> <a href="https://jameshagerphoto.com/" target="JHP">JamesHagerPhoto.com website</a></p>
+        <p><span>More Info:</span> <a href="https://jameshagerphoto.com/" target="JamesHagerPhoto">JamesHagerPhoto.com website</a></p>
     </div>
     <p>I created this website to feature my nature-photography work.</p>
     <p>The blog system was set up so that I could create new blog entries on my laptop while away from the internet, export the necessary data to an XML file, and import that data into the live site when I had a net connection.</p>
@@ -197,37 +229,40 @@
         </div>
     </div>
 
-    <h2>SKILLS</h2>
+    <a name="skills"></a>
+    <h1>SKILLS</h1>
 
-    <h4>Languages</h4>
+    <h3>Languages</h3>
     <p>Swift, JavaScript, PHP, SQL, Objective-C, C#, Python</p>
 
-    <h4>Apple Frameworks</h4>
+    <h3>Apple Frameworks</h3>
     <p>UIKit, Cocoa, CoreData, MessageUI, StoreKit, CoreLocation, MapKit, CryptoKit, MultipeerConnectivity, AVFoundation, CoreMotion, ImageIO, Photos</p>
 
-    <h4>JavaScript Frameworks & Libraries</h4>
+    <h3>JavaScript Frameworks & Libraries</h3>
     <p>NodeJS, Axios, ExpressJS, Sequelize, BcryptJS</p>
 
-    <h4>Databases</h4>
+    <h3>Databases</h3>
     <p>MySQL, PostgreSQL</p>
 
-    <h4>Data Formats</h4>
+    <h3>Data Formats</h3>
     <p>JSON, XML</p>
 
-    <h4>Operating Systems</h4>
+    <h3>Operating Systems</h3>
     <p>macOS, Unix</p>
 
-    <h4>Version Control</h4>
+    <h3>Version Control</h3>
     <p>Git, GitHub, Bitbucket, Sourcetree</p>
 
-    <h4>Environments</h4>
+    <h3>Environments</h3>
     <p>Xcode, VSCode, Terminal, vi, phpMyAdmin, Apache, Heroku, Rollbar, Postman, SQL Tabs</p>
 
-    <h2>CONTACT</h2>
+    <a name="contact"></a>
+    <h1>CONTACT</h1>
     <div class="contact">
         <p><a href="mailto:james.hager.developer@gmail.com">James.Hager.Developer@gmail.com</a><span>|</span><a href="https://www.linkedin.com/in/james-onslow-hager/" target="LinkedIn">LinkedIn</a><span>|</span><a href="https://github.com/johager" target="JOHGitHub">GitHub</a></p>
     </div>
 </div>
+<script src="nav.js"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>
