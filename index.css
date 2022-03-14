@@ -26,7 +26,6 @@ body {
     position: relative;
     box-sizing: border-box;
     width: 800px;
-    padding-bottom: 48px;
     margin: 0px auto;
 }
 
@@ -68,6 +67,7 @@ nav {
     display: inline-block;
     color: #005449;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 nav a {
@@ -75,12 +75,13 @@ nav a {
     text-decoration: none;
     color: #005449;
     text-decoration: none;
-    padding: 2px 6px 0px;
+    padding: 6px 8px 4px;
 }
 
 .main_nav a {
+    font-size: 1.3em;
     border: 1px solid #FFFFFF;
-    margin-left: 6px;
+    margin-left: 8px;
 }
 
 .main_nav a:hover,
@@ -126,6 +127,27 @@ a.menuItem:hover, a.menuItemHighlight {
     background-color: #F2F6F6;
     /* color: #FFFFFF;
     background-color: #33766D; */
+}
+
+footer {
+    position: fixed;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #FFFFFF;
+    bottom: 0px;
+    width: 800px;
+    z-index: 100;
+}
+
+footer div {
+    border-top: 2px solid #005449;
+    padding: 6px 0px 8px;
+    margin-top: 24px;
+}
+
+footer span {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1 {
@@ -193,6 +215,8 @@ a[name] {
     font-size: 1.1em;
     font-weight: 700;
     color: #005449;
+    /* padding-right: 8px; */
+    padding-right: 0.5em;
 }
 
 .devicon {
@@ -308,13 +332,4 @@ a[name] {
     border: solid 1px #005449;
     padding: 24px;
     margin-top: 32px;
-}
-
-.contact {
-    padding-bottom: 64px;
-}
-
-.contact span {
-    margin-left: 8px;
-    margin-right: 8px;
 }
