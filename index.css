@@ -33,14 +33,11 @@ header {
     position: sticky;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     align-items: baseline;
-    /* align-items: flex-start; */
     background-color: #FFFFFF;
     top: 0;
-    padding: 24px 8px 10px 8px;
-    margin-left: -8px;
-    margin-right: -8px;
+    padding: 24px 8px 10px;
+    margin: 0px -8px;
     z-index: 100;
 }
 
@@ -131,14 +128,14 @@ a.menuItem:hover, a.menuItemHighlight {
 
 footer {
     position: fixed;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     text-align: center;
     background-color: #FFFFFF;
     bottom: 0px;
-    width: 800px;
-    z-index: 100;
+    width: 816px;
     padding: 0px 8px;
     margin: 0px -8px;
+    z-index: 100;
 }
 
 footer div {
