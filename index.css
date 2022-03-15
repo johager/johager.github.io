@@ -142,13 +142,18 @@ footer {
     display: flex;
     justify-content: space-between;
     border-top: 2px solid #005449;
-    padding: 6px 0px 8px;
+    padding: 8px 0px;
     margin-top: 24px;
 }
 
+.copy {
+    color: #545454;
+    font-size: 0.8em;
+}
+
 footer span {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 h1 {
