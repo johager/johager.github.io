@@ -141,14 +141,14 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
+    font-size: 0.8em;
     border-top: 2px solid #005449;
-    padding: 8px 0px;
+    padding: 4px 0px 6px;
     margin-top: 24px;
 }
 
 .copy {
     color: #545454;
-    font-size: 0.8em;
 }
 
 footer span {
