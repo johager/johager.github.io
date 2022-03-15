@@ -137,6 +137,8 @@ footer {
     bottom: 0px;
     width: 800px;
     z-index: 100;
+    padding: 0px 8px;
+    margin: 0px -8px;
 }
 
 footer div {
