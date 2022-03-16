@@ -193,6 +193,13 @@ p {
     margin-bottom: 8px;
 }
 
+a {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
 a:link, a:visited, a:active {
     color: #005449;
     text-decoration: none;
