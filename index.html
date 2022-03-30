@@ -69,10 +69,12 @@
         <p><span>Technology (RESTful API):</span>PHP, MySQL</p>
         <p><span>More Info:</span><a href="https://avantiapplications.com/aweather/" target="AvantiApps">AvantiApplications.com Website</a></p>
     </div>
-    <p>AWeather, short for Avanti Weather, is a weather app for iDevices (iPhones, iPads, and iPods) that lets you manage weather forecasts from NOAA (the National Oceanic and Atmospheric Administration) and the National Weather Service (NWS) while you're on the go and away from the internet. Weather data can be downloaded for multiple locations when you have a net connection and can be viewed later whether you have a net connection or not. In addition to using the accurate NOAA/NWS forecast data, you can get the forecast for where you want it and not only for major metropolitan locations.</p>
+    <p>This is a weather app for iDevices (iPhones, iPads, and iPods) that lets you manage weather forecasts from NOAA (the National Oceanic and Atmospheric Administration) and the National Weather Service (NWS) while you're on the go and away from the internet. Weather data can be downloaded for multiple locations when you have a net connection and can be viewed later whether you have a net connection or not.</p>
     <p>It obtains data from the NWS API (JSON), websites (HTML, XML), and image repositories (JPEG, TIFF).</p>
-    <p>It also connects with a dedicated RESTful API to report errors associated with the NWS feed and to: 1)&nbsp;report errors with the data feed, and 2)&nbsp;obtain weather-icon composition data for automatic over-the-air app updates.</p>
-    <p>The app is available through the Apple App Store.</p>
+    <p>CoreLocation is used to allow locations to be created from the user’s current location. MapKit is used to: 1)&nbsp;allow locations to be created from tapping on a map, and 2)&nbsp;present radar data.</p>
+    <p>It uses a RESTful API created using PHP and MySQL to: 1)&nbsp;report errors with the data feed, and 2)&nbsp;obtain weather icon composition data for automatic over-the-air app updates. CryptoKit is used to ensure data integrity.</p>
+    <p>XCTest is used for data-parsing functions and data-calculation functions unit tests, and API integration tests.</p>
+    <p>The app has been available through the Apple App Store since April 2016.</p>
     <p class="appstore"><a href="https://itunes.apple.com/us/app/aweather/id1072955115?ls=1&mt=8" target="AWeatherItunes"><img src="images/Download_on_the_App_Store_Badge_US-UK_135x40_270x80.png" alt="download on the App Store"></a></p>
     <div class="screenshots ios_screenshots">
         <p>iOS App Screenshots</p>
@@ -107,8 +109,9 @@
         <p><span>Technology:</span>Swift, UIKit, Cocoa, CoreData, MultipeerConnectivity</p>
     </div>
     <p>I created this notes app so I could sync data between my devices w/o having an internet connection. It supports simple formatting, images, and PDF files. It can import and export notes in Evernote format and a native ANotes format.</p>
-    <p>It uses a common framework (ANotesKit) for the basic functionality that's shared between the iOS and macOS apps which have different UI frameworks and requirements.</p>
+    <p>It uses a common framework to: 1)&nbsp;store data using CoreData, and 2)&nbsp;sync using MultipeerConnectivity. UIKit is used for the iOS UI and Cocoa is used for the macOS UI.</p>
     <p>The sync function uses a vector clock and never loses data &mdash; if there's a sync conflict, both sets of data are combined and formatted to indicate that there was a sync conflict.</p>
+
     <p>This a personal app that I use every day.</p>
     <div class="screenshots ios_screenshots">
         <p>iOS App Screenshots</p>
