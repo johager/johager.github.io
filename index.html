@@ -34,6 +34,7 @@
             </div>
             <div class='sub_nav' id='sub_nav'>
                 <div id="projects_subnav" class="menu" onMouseOver="menuMouseover(event)">
+                    <a class="menuItem" href="#atracks">ATracks &hellip; an iOS & macOS App</a>
                     <a class="menuItem" href="#aweather">AWeather &hellip; an iOS App</a>
                     <a class="menuItem" href="#anotes">ANotes &hellip; an iOS & macOS App</a>
                     <a class="menuItem" href="#contacts_ctjh">Contacts &hellip; an iOS App</a>
@@ -61,13 +62,52 @@
     <a name="projects"></a>
     <h1>PROJECTS</h1>
 
-    <a name="aweather"></a>
+    <a name="atracks"class=""></a>
+    <h2>ATracks<span>&hellip; an iOS and macOS App</span></h2>
+    <div class="tech">
+        <p><span>Technology:</span>Swift, SwiftUI, UIKit, AppKit, CoreData, CoreLocation, HealthKit, MapKit, XCTest</p>
+        <p><span>More Info:</span><a href="https://github.com/johager/ATracks" target="ATracksGitHub">GitHub Repo</a> | <a href="https://avantiapplications.com/atracks/" target="ATracksAvantiApps">AvantiApplications.com/ATracks Website</a></p>
+    </div>
+    <p>This app records location, elevation, and step data for your outdoor activities. Data is stored locally using CoreData so that you'll always have it. It's also stored in your iCloud account so it can synch with all of your Apple devices. Step data is obtained from the Apple Health app using HealthKit.</p>
+
+    <p>It was developed using SwiftUI to facilitate cross-platform development. Several features required bridging to native UIKit and AppKit implementations:
+        <ul>
+            <li>Alert with a text field</li>
+            <li>MKMapView with an MKOverlay</li>
+            <li>Detect tap on MKMapView</li>
+            <li>Detect touch position on View</li>
+            <li>Present MFMailComposeViewController</li>
+        </ul>
+    </p>
+    <p>XCTest is used for unit tests.</p>
+    <p>The iOS app has been available through the Apple App Store since May 2022.</p>
+    <p class="appstore"><a href="https://itunes.apple.com/us/app/atracks/id1619330372" target="ATracksItunes"><img src="images/Download_on_the_App_Store_Badge_US-UK_135x40_270x80.png" alt="download on the App Store"></a></p>
+    <div class="screenshots ios_screenshots">
+        <p>iOS App Screenshots</p>
+        <div class="screenshots_scroll">
+            <img src="images/at_ss1_tracks_01.png" alt="atracks tracks">
+            <img src="images/at_ss2_track_01.png" alt="atracks track">
+            <img src="images/at_ss3_tracks_search_01.png" alt="atracks tracks search">
+            <img src="images/at_ss4_add_track_01.png" alt="atracks add track">
+            <img src="images/at_ss5_tracks_swipe_01.png" alt="atracks tracks with swipe">
+            <img src="images/at_ss6_settings_01.png" alt="atracks settings">
+            <img src="images/at_ss7_track_dark_01.png" alt="atracks track dark mode">
+        </div>
+    </div>
+    <div class="between_screenshots"></div>
+    <div class="video">
+        <p>Demo Video</p>
+        <div class="video_iframe" style="padding:55% 0 0">
+        <iframe src="https://player.vimeo.com/video/706745006?h=41154cba60" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <a name="aweather"class=""></a>
     <h2>AWeather<span>&hellip; an iOS App</span></h2>
-    <!-- <h2>AWeather<span>&mdash; an iOS App</span></h2> -->
     <div class="tech">
         <p><span>Technology (iOS App):</span>Swift, UIKit, CoreData, CoreLocation, MapKit, CryptoKit, XCTest</p>
         <p><span>Technology (RESTful API):</span>PHP, MySQL</p>
-        <p><span>More Info:</span><a href="https://avantiapplications.com/aweather/" target="AvantiApps">AvantiApplications.com Website</a></p>
+        <p><span>More Info:</span><a href="https://avantiapplications.com/aweather/" target="AWeatherAvantiApps">AvantiApplications.com/AWeather Website</a></p>
     </div>
     <p>This is a weather app for iDevices (iPhones, iPads, and iPods) that lets you manage weather forecasts from NOAA (the National Oceanic and Atmospheric Administration) and the National Weather Service (NWS) while you're on the go and away from the internet. Weather data can be downloaded for multiple locations when you have a net connection and can be viewed later whether you have a net connection or not.</p>
     <p>It obtains data from the NWS API (JSON), websites (HTML, XML), and image repositories (JPEG, TIFF).</p>
@@ -180,7 +220,7 @@
     <p>I created this contacts web app for my Devmountain Foundations capstone project. Each contact can have an arbitrary number of phone numbers, email addresses, and physical addresses. Clicking on the phone data will launch a phone call, clicking on the email data will launch your email app, and clicking on the address data will launch Google maps. Each contact can also have a free-form note area which supports basic HTML for simple formatting. Contacts can be assigned to user-defined groups. It has a responsive design.</p>
     <div class="video">
         <p>Demo Video</p>
-        <div class="video_iframe">
+        <div class="video_iframe" style="padding:69% 0 0">
         <iframe src="https://player.vimeo.com/video/686962478?h=ae31688ceb" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
@@ -282,7 +322,7 @@
     <p>Swift, JavaScript, PHP, SQL, Objective-C, C#, Python</p>
 
     <h3>Apple Frameworks</h3>
-    <p>UIKit, Cocoa, CoreData, XCTest, MessageUI, StoreKit, CoreLocation, MapKit, CryptoKit, MultipeerConnectivity, AVFoundation, CoreMotion, ImageIO, Photos, Speech</p>
+    <p>SwiftUI, UIKit, AppKit, Cocoa, CoreData, XCTest, MessageUI, StoreKit, CoreLocation, MapKit, CryptoKit, HealthKit, MultipeerConnectivity, AVFoundation, CoreMotion, ImageIO, Photos, Speech</p>
 
     <h3>JavaScript Frameworks & Libraries</h3>
     <p>NodeJS, Axios, ExpressJS, Sequelize, BcryptJS</p>

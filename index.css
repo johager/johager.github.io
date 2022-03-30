@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 148px;
 }
 
 body {
@@ -210,8 +211,12 @@ a:hover {
     text-decoration: underline;
 }
 
-a[name] {
+/* a[name] {
     scroll-margin-top: 102px;
+} */
+
+li {
+    margin-left: 2em;
 }
 
 .tech {
@@ -326,7 +331,6 @@ a[name] {
 
 .video_iframe {
     position: relative;
-    padding: 69% 0 0 0;
     margin: 0px 20px 14px;
 }
 
