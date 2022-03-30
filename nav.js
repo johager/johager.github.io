@@ -253,7 +253,7 @@ function depressButton(button, showPosition) {
 
   // start added for Avanti
   //x -= 1;
-  y -= 1;
+  y -= 2;
   // end added for Avanti
 
   button.menu.style.left = x + "px";

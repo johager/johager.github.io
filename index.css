@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 148px;
 }
 
 body {
@@ -210,9 +211,9 @@ a:hover {
     text-decoration: underline;
 }
 
-a[name] {
+/* a[name] {
     scroll-margin-top: 102px;
-}
+} */
 
 .tech {
     margin-top: 18px;
